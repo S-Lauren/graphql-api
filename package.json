@@ -7,6 +7,9 @@
     "start": "tsc && node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "15.4.0"
+  },
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
