@@ -4,6 +4,7 @@ interface IProduct extends mongoose.Document {
   name: string;
   image: string;
   score: number;
+  ingredients: string;
 }
 
 const schema = new mongoose.Schema({
@@ -12,7 +13,8 @@ const schema = new mongoose.Schema({
     required: true
   },
   image: String,
-  score: Number
+  score: Number,
+  ingredients: String,
 })
 const ProductModel = model<IProduct>("Product", schema);
 

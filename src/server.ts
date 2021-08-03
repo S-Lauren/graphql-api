@@ -31,11 +31,13 @@ const connectToMongoDB = async () => {
     .catch(err => console.log(err));
 
   // Fetch all products
+  // mongoose.model('Product').schema.add({ ingredients: String });
   const getProduct = await ProductModel.find({})
   console.log(getProduct)
 }
 
 connectToMongoDB()
+// require('mongoose').model('Product').schema.add({ ingredients: String });
 
 /* Connect to graphQL express server */
 app.use(

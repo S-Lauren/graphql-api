@@ -7,6 +7,7 @@ module.exports = buildSchema(`
     name: String!
     image: String
     score: Int
+    ingredients: String
   }
 
 
@@ -14,6 +15,7 @@ module.exports = buildSchema(`
     name: String!
     image: String
     score: Int
+    ingredients: String
   }
 
   type Query {

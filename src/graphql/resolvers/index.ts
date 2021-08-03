@@ -16,11 +16,12 @@ module.exports = {
 
   createProduct: async args => {
     try {
-      const { name, image, score } = args.product
+      const { name, image, score, ingredients } = args.product
       const product = new ProductModel({
         name,
         score,
-        image
+        image,
+        ingredients
       })
       const getProduct = await product.save();
       return getProduct;
